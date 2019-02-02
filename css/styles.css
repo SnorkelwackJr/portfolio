@@ -1,0 +1,107 @@
+body {
+  color: #414141;
+  background-color: #ECECEC;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+
+footer {
+  margin-top: 100px;
+}
+
+
+img {
+  border: 1px solid #414141;
+}
+
+
+.first-img {
+  padding: 0px;
+  border: 20px inset #5D6063;
+}
+
+
+/*--------- Side navigation menu ---------*/
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #50f45b;
+  color: white;
+}
+
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+/* Page content. */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+/* On screens that are less than 400px, display the bar vertically */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+/*--------------------------------------------*/
+
+
+/* Button */
+.button {
+  color: #50f45b;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+  margin-left: 160px;
+
+
+  width: 200px;
+  box-sizing: border-box;
+}
