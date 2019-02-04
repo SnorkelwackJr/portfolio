@@ -1,26 +1,38 @@
 body {
   color: #414141;
-  background-color: #ECECEC;
+
+  background-color: #ECEBEB;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica", "Arial", sans-serif;
 }
 
-footer {
-  margin-top: 100px;
+h1 {
+  padding-bottom: 0px;
 }
 
 img {
-  border: 1px solid #414141;
-}
-
-.first-img {
   padding: 0px;
   border: 20px inset #5D6063;
 }
 
-/*--------- Side navigation menu ---------*/
+/* Button */
+.button {
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+  margin-left: 160px;
+
+  width: 200px;
+  box-sizing: border-box;  /* Add this */
+}
+
+/*--------- The side navigation menu ---------*/
 .sidebar {
   margin: 0;
   padding: 0;
@@ -41,7 +53,7 @@ img {
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #50f45b;
+  background-color: #4CAF50;
   color: white;
 }
 
@@ -51,7 +63,7 @@ img {
   color: white;
 }
 
-/* Page content. */
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
@@ -69,26 +81,10 @@ div.content {
   div.content {margin-left: 0;}
 }
 
-/* On screens that are less than 400px, display the bar vertically */
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
     float: none;
   }
-}
-/*--------------------------------------------*/
-
-/* Button */
-.button {
-  color: #50f45b;
-  background-color: #5995DA;
-  font-weight: bold;
-  padding: 20px;
-  text-align: center;
-  border: 2px solid #5D6063;
-  border-radius: 5px;
-  margin-left: 160px;
-
-  width: 200px;
-  box-sizing: border-box;
 }
