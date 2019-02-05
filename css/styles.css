@@ -1,7 +1,7 @@
 body {
   color: #414141;
 
-  background-color: #ECEBEB;
+  background-color: #e5e5e5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,7 +53,7 @@ img {
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #4CAF50;
+  background-color: #46b225;
   color: white;
 }
 
@@ -68,6 +68,7 @@ div.content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
+  font-size: 18px;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
